@@ -31,11 +31,16 @@ const ImageUploadForm = () => {
     });
 
     try {
-      const response = await axios.post("/members", formData, {
+      const response = {
+        data: {
+          prediction_text: "key"
+        }
+      };
+      /*await axios.post("/members", formData, { //Axios and React-Native are not working properly, even though the same code worked in React
         headers: {
           "Content-Type": "multipart/form-data",
         },
-      });
+      });*/
       const { prediction_text } = response.data;
       console.log(prediction_text);
       setPredictionText(prediction_text);
