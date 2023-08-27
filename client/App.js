@@ -6,19 +6,15 @@ import ImageUploadForm from "./components/ImageUploadForm";
 import Navigation from "./navigation/navigation";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Navigation />
-    </View>
-  );
+  return <Navigation />;
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#F9FBFC",
-  },
+  // container: {
+  //   flex: 1,
+  //   backgroundColor: "#fff",
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  //   backgroundColor: "#F9FBFC",
+  // },
 });

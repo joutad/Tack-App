@@ -6,6 +6,7 @@ import { StyleSheet, Text, View } from "react-native";
 import SignInScreen from "../screens/SignInScreen/SignInScreen";
 import SignUpScreen from "../screens/SignUpScreen/SignUpScreen";
 import ImageUploadForm from "../components/ImageUploadForm";
+import HomeScreen from "../screens/HomeScreen/HomeScreen";
 
 const Stack = createNativeStackNavigator();
 
