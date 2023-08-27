@@ -13,14 +13,14 @@ const CustomButton = ({
       onPress={onPress}
       style={[
         styles.container,
-        styles["container_${type}"],
+        styles[`container_${type}`],
         bgColor ? { backgroundColor: bgColor } : {},
       ]}
     >
       <Text
         style={[
           styles.text,
-          styles["text_${type}"],
+          styles[`text_${type}`],
           fgColor ? { color: fgColor } : {},
         ]}
       >
@@ -32,8 +32,6 @@ const CustomButton = ({
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#0F993E",
-
     width: "100%",
 
     padding: 15,
@@ -44,7 +42,7 @@ const styles = StyleSheet.create({
   },
 
   container_PRIMARY: {
-    backgroundColor: "#1317DD",
+    backgroundColor: "#3B71F3",
   },
 
   container_TERTIARY: {},
@@ -54,6 +52,8 @@ const styles = StyleSheet.create({
     color: "white",
   },
 
-  text_TERTIARY: {},
+  text_TERTIARY: {
+    color: "gray",
+  },
 });
 export default CustomButton;

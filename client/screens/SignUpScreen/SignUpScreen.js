@@ -17,7 +17,7 @@ const SignUpScreen = () => {
     console.warn("Sign in with Google");
   };
 
-  const onSignUpPress = () => {
+  const onSignInPress = () => {
     console.warn("Sign up Press");
   };
 
@@ -52,15 +52,16 @@ const SignUpScreen = () => {
         </Text>
         <Text style={styles.text}>OR</Text>
         <CustomButton
-          text="Sign In with Google"
+          text="Sign Up with Google"
           onPress={onSignInGoogle}
-          bgColor="#1317DD"
+          bgColor="#E7646C"
           fgColor="white"
         />
 
         <CustomButton
-          text="Don't have an account? Create one"
-          onPress={onSignUpPress}
+          text="Have an account? Sign In"
+          onPress={onSignInPress}
+          type="TERTIARY"
         />
       </View>
     </ScrollView>
