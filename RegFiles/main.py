@@ -13,7 +13,7 @@ mycursor.execute('''
           ( Name char(100),Email char(100), Password char(8))
           ''')
 def previous_customer():
-    answer = input("Have you logged in before?(y/n)")
+    answer = input("Have you logged in before?(y/n): ")
     if answer == "y":
         name = input("Please enter your name: ")
         data=mycursor.execute('''SELECT * FROM PeopleRegisters''')
@@ -26,8 +26,8 @@ def previous_customer():
                 return True
             else :
                 return False
-        else:
-            user_login()
+    elif answer == "n":
+        user_login()
 
 def user_login():
     print("Thank you for choosing our app")
