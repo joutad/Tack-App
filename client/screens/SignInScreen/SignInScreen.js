@@ -10,15 +10,18 @@ import React, { useState } from "react";
 import Logo from "../../assets/images/logo.png";
 import CustomInput from "../../components/CustomInput/CustomInput";
 import CustomButton from "../../components/CustomButton/CustomButton";
+import { useNavigation } from "@react-navigation/native";
 
 const SignInScreen = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const { height } = useWindowDimensions();
+  const navigation = useNavigation();
 
   const onSignInPressed = () => {
     console.warn("Sign in");
+    navigation.navigate("HomeScreen");
   };
 
   const onSignInGoogle = () => {
@@ -27,6 +30,7 @@ const SignInScreen = () => {
 
   const onSignUpPress = () => {
     console.warn("Sign up Press");
+    navigation.navigate("SignUp");
   };
 
   return (

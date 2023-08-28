@@ -6,7 +6,7 @@ import { StyleSheet, Text, View } from "react-native";
 import SignInScreen from "../screens/SignInScreen/SignInScreen";
 import SignUpScreen from "../screens/SignUpScreen/SignUpScreen";
 import ImageUploadForm from "../components/ImageUploadForm";
-import HomeScreen from "../screens/HomeScreen/HomeScreen";
+import HomeScreen from "../screens/HomeScreen/index";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +17,8 @@ const Navigation = () => {
         <Stack.Screen name="SignIn" component={SignInScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="UploadImage" component={ImageUploadForm} />
+
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
